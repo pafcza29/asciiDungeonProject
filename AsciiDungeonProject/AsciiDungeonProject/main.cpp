@@ -1,6 +1,9 @@
 ﻿#include <iostream>
+#include "player.hpp"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    Player* player = new Player("Pavel");
+    player->printInfo();
+    delete player;
 }

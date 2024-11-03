@@ -1,0 +1,4 @@
+﻿  Rooms and Tiles.cpp
+C:\AuricForgeProjectFiles\Rooms and Tiles\Rooms and Tiles\Rooms and Tiles\Rooms and Tiles.cpp(242,1): warning C4715: 'Room::ObjectToString': not all control paths return a value
+C:\AuricForgeProjectFiles\Rooms and Tiles\Rooms and Tiles\Rooms and Tiles\Rooms and Tiles.cpp(222,1): warning C4715: 'Room::TileToString': not all control paths return a value
+  Rooms and Tiles.vcxproj -> C:\AuricForgeProjectFiles\Rooms and Tiles\Rooms and Tiles\x64\Debug\Rooms and Tiles.exe

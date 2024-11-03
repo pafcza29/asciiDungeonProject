@@ -1,6 +1,6 @@
 ﻿#include <iostream>
-#include "enemy.hpp"
 #include "player.hpp"
+#include "enemy.hpp"
 
 int main()
 {
@@ -8,6 +8,9 @@ int main()
     Enemy* slime = new Enemy("Slime", 20, 10);
 
     slime->attackPlayer(player);
+
+    delete player;
+    delete slime;
 
     return 0;
 }

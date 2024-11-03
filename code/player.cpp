@@ -13,4 +13,5 @@ Player::Player(std::string name){
 
 void Player::takeDamage(int damage){
     m_healthCurrent -= damage;
+    std::cout << "Took " << damage << " damage!\n";
 }

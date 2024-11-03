@@ -1,3 +1,6 @@
+#ifndef PLAYER_HPP
+#define PLAYER_HPP
+
 #include <iostream>
 
 class Player{
@@ -13,3 +16,5 @@ class Player{
     Player(std::string name);
     void takeDamage(int damage);
 };
+
+#endif

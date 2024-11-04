@@ -1,5 +1,7 @@
 #include <iostream>
 #include "player.hpp"
+#include "weapon.hpp"
+#include "consumable.hpp"
 
 Player::Player(std::string name){
     m_name = name;
@@ -14,4 +16,10 @@ Player::Player(std::string name){
 void Player::takeDamage(int damage){
     m_healthCurrent -= damage;
     std::cout << "Took " << damage << " damage!\n";
+}
+
+void Player::equipWeapon(Weapon* weapon){
+    if (weapon != nullptr){
+        m_equippedWeapon = weapon;
+    }
 }

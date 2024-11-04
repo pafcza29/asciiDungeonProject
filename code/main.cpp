@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include "player.hpp"
 #include "enemy.hpp"
+#include "weapon.hpp"
 
 int main()
 {

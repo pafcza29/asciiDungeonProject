@@ -2,6 +2,8 @@
 #define PLAYER_HPP
 
 #include <iostream>
+#include "weapon.hpp"
+#include "consumable.hpp"
 
 class Player{
     private:
@@ -11,10 +13,12 @@ class Player{
     int m_attack;
     int m_criticalChance;
     float m_criticalDamage;
+    Weapon* m_equippedWeapon;
 
     public:
     Player(std::string name);
     void takeDamage(int damage);
+    void equipWeapon(Weapon* weapon);
 };
 
 #endif

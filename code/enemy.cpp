@@ -1,6 +1,6 @@
 #include <iostream>
+
 #include "enemy.hpp"
-#include "player.hpp"
 
 Enemy::Enemy(std::string name, int health, int attack){
     m_name = name;

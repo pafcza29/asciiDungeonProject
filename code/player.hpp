@@ -2,8 +2,11 @@
 #define PLAYER_HPP
 
 #include <iostream>
+#include <vector>
 #include "weapon.hpp"
 #include "consumable.hpp"
+
+class Consumable;
 
 class Player{
     private:
@@ -14,11 +17,17 @@ class Player{
     int m_criticalChance;
     float m_criticalDamage;
     Weapon* m_equippedWeapon;
+    std::vector<Consumable*> m_consumables;
 
     public:
     Player(std::string name);
     void takeDamage(int damage);
     void equipWeapon(Weapon* weapon);
+    void addConsumable(Consumable* consumable);
+    void useConsumable(Consumable* consumable);
+
+    int getHealthCurr();
+    int getHealthMax();
 };
 
 #endif

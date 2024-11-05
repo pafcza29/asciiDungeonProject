@@ -10,16 +10,13 @@ enum class ConsumableType{
 
 class Consumable{
     private:
-    std::string m_name;
     ConsumableType m_type;
-    int m_count;
+    int m_level;
 
     public:
-    Consumable(std::string name, ConsumableType type, int count);
-    void useConsumable(Player* player);
-    std::string getName();
+    Consumable(ConsumableType type, int level);
     ConsumableType getType();
-    int getCount();
+    int getLevel();
 };
 
 #endif

@@ -4,9 +4,10 @@
 
 int getHealAmount(Player* player, int level){
     int amount = level * 5;
-    int diff = player->getHealthCurr() + amount - player->getHealthMax();
-    if (diff < 0){
-        amount = player->getHealthMax() - player->getHealthCurr();
+    int diff = player->getHealthMax() - player->getHealthCurr();
+
+    if (diff < amount){
+        amount = diff;
     }
     return amount;
 }
